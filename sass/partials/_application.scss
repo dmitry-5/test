@@ -1,0 +1,93 @@
+.application {
+    background: var(--light-grey, #F9F9F9);
+    padding: 68px 0 54px 0;
+    @media (max-width: 767px) {
+        background: none;
+        padding: 0;
+    }
+    .layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        h3 {
+            color: var(--dark-primary, #2A254B);
+            text-align: center;
+            font-family: Clash Display;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            margin: 68px 0 16px 0;
+        }
+        p {
+            color: var(--dark-primary, #2A254B);
+            text-align: center;
+            font-family: Satoshi;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            max-width: 470px;
+            height: auto;
+            @media (max-width: 767px) {
+                text-align: left;
+            }
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            margin: 72px 0 54px 0;
+            @media (max-width: 560px) {
+                width: 100%;;
+            }
+            .entry {
+                @media (max-width: 560px) {
+                    width: 100%;
+                }
+                .row {
+                    @media (max-width: 560px) {
+                        width: 100%;
+                    }
+                    input {
+                        font-family: Satoshi;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        background-color: var(--light-grey, #F9F9F9);
+                        border: none;
+                        padding: 17px 0 17px 32px;
+                        width: 354px;
+                        height: 56px;
+                        color: var(--dark-primary, #2A254B);
+                        color: #2A254B;
+                        @media (max-width: 560px) {
+                            width: 100%;
+                        }
+                    }
+                    ::placeholder {
+                        color: var(--dark-primary, #2A254B);
+                        opacity: 0.2;
+                    }  
+                }
+            }
+            .button-holder {
+                position: relative;
+                .request {
+                    font-family: Satoshi;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    border: none;
+                    cursor: pointer;
+                    height: 56px;
+                    color: var(--white, #FFF);
+                    background: var(--dark-primary, #2A254B);
+                    width: 118px;
+                }
+            }
+        }
+    }
+}

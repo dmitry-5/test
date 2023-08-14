@@ -1,0 +1,22 @@
+@mixin box {
+	display: block;
+  position:relative;
+  overflow: hidden;
+  width: 100%;
+	box-sizing: border-box;
+	height: auto;
+}
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -ms-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}
+
+
+
+
+
+
+
